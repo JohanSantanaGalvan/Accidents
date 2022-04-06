@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.w3schools.com" xmlns="https://www.w3schools.com" elementFormDefault="qualified">
+  <xs:element name="data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="row" minOccurs="1" maxOccurs="unbounded" type="rowType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="rowType">
+      
+    <xs:sequence>
+      <xs:element name="DILIG" type="xs:positiveInteger" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      <xs:element name="PLACE" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      <xs:element name="HEIGHT_OF" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      <xs:element name="DATE" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      <xs:element name="HOUR" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      <xs:element name="VEHICLES" type="xs:integer" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      <xs:element name="INJURED" type="xs:integer" minOccurs="0" maxOccurs="unbounded"></xs:element>
+      <xs:element name="DESTINATION" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      <xs:element name="COLLISION" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      <xs:element name="INFR_COND" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      <xs:element name="INFR_PEAT" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      <xs:element name="COMPLAINTS" type="xs:integer" minOccurs="1" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="_id" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+
+</xs:schema>
